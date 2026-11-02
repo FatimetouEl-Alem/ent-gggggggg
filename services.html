@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Services — entreprenant.ga</title>
+<meta name="description" content="Taxes, cotisations CNSS et CNAMGS, reçus, rappels et fiche entreprise : tous les services de l’espace entreprenant.">
+<meta name="theme-color" content="#2E68BE">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/pjs-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/pages.css">
+<script src="js/pages.js" defer></script>
+</head>
+<body class="pg" data-page="services">
+<a class="pg-skip" href="#contenu">Aller au contenu</a>
+
+<!-- ================= EN-TÊTE ================= -->
+<header class="site-header" data-header>
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="entreprenant.ga, accueil">
+      <img src="assets/img/logo-couleur.png" alt="entreprenant.ga" width="266" height="34">
+    </a>
+
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a class="nav-link" href="index.html">Accueil</a>
+      <a class="nav-link is-active" href="services.html" aria-current="page">Services</a>
+      <a class="nav-link" href="comment-ca-marche.html">Comment ça marche</a>
+      <a class="nav-link" href="partenaires.html">Partenaires</a>
+      <a class="nav-link" href="annuaire.html">Annuaire</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-primary btn-sm header-cta" href="connexion.html">
+        <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+        Se connecter
+      </a>
+      <button type="button" class="burger" data-burger aria-controls="mobile-menu" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu hidden>
+    <nav class="mobile-menu__nav" aria-label="Menu mobile">
+      <a class="mobile-menu__link" href="index.html">Accueil</a>
+      <a class="mobile-menu__link" href="services.html" aria-current="page">Services</a>
+      <a class="mobile-menu__link" href="comment-ca-marche.html">Comment ça marche</a>
+      <a class="mobile-menu__link" href="partenaires.html">Partenaires</a>
+      <a class="mobile-menu__link" href="annuaire.html">Annuaire</a>
+    </nav>
+    <a class="btn btn-primary btn-lg mobile-menu__cta" href="connexion.html">Se connecter</a>
+    <a class="mobile-menu__sub" href="connexion.html#inscription">Créer un compte</a>
+  </div>
+</header>
+
+<main id="contenu" tabindex="-1">
+<!-- ================= HERO ================= -->
+<section class="pg-hero">
+  <svg class="pg-hero__ribbon" viewBox="0 0 1440 400" preserveAspectRatio="none" aria-hidden="true"><path d="M-30 340 C 280 270, 520 380, 820 290 S 1240 120, 1470 160" fill="none" stroke="#FFCD04" stroke-opacity=".32" stroke-width="10" stroke-linecap="round"/><path d="M-30 370 C 290 300, 530 410, 830 320 S 1250 150, 1470 190" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="2"/></svg>
+    <img class="watermark pg-hero__mark" src="assets/img/e-blanc.png" alt="" aria-hidden="true">
+  <div class="container pg-hero__inner">
+    <div>
+      <ol class="pg-crumbs" aria-label="Fil d’Ariane"><li><a href="index.html">Accueil</a></li><li aria-current="page">Services</li></ol>
+      <h1 class="pg-hero__title">Vos démarches d’entreprenant, en ligne</h1>
+      <p class="pg-hero__lead">Taxes, cotisations sociales, reçus et rappels : tout ce que vous réglez d’habitude au guichet, depuis votre téléphone ou votre ordinateur.</p>
+    </div>
+    <div class="pg-facts" role="list">
+      <div class="pg-fact" role="listitem"><span class="pg-fact__value">5</span><span class="pg-fact__label">services dans un seul compte</span></div>
+      <div class="pg-fact" role="listitem"><span class="pg-fact__value">3</span><span class="pg-fact__label">institutions partenaires</span></div>
+      <div class="pg-fact" role="listitem"><span class="pg-fact__value">24 h/24</span><span class="pg-fact__label">pour payer, sans déplacement</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPLORATEUR DE SERVICES ================= -->
+<section class="pg-lift" aria-label="Choisir un service">
+  <div class="container">
+    <div class="pg-explorer" data-tabs>
+      <div class="pg-tabs" role="tablist" aria-label="Services" aria-orientation="vertical">
+        <button type="button" class="pg-tab" role="tab" id="tab-taxes" aria-controls="taxes" aria-selected="true" data-tab="taxes">
+          <span class="pg-tab__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 10h19"/><path d="M6.5 15h4"/></svg></span>
+          <span><span class="pg-tab__name">Payer mes taxes</span><span class="pg-tab__hint">Patente, TVA, taxe municipale</span></span>
+        </button>
+        <button type="button" class="pg-tab" role="tab" id="tab-cotisations" aria-controls="cotisations" aria-selected="false" tabindex="-1" data-tab="cotisations">
+          <span class="pg-tab__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.5a5 5 0 0 1 5.5 5"/></svg></span>
+          <span><span class="pg-tab__name">Payer mes cotisations</span><span class="pg-tab__hint">CNSS et CNAMGS</span></span>
+        </button>
+        <button type="button" class="pg-tab" role="tab" id="tab-recus" aria-controls="recus" aria-selected="false" tabindex="-1" data-tab="recus">
+          <span class="pg-tab__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2.5h8.5l4.5 4.5v14.5H6z"/><path d="M14 2.5V7.5h5"/><path d="m9.5 14.5 2 2 3.5-4"/></svg></span>
+          <span><span class="pg-tab__name">Historique et reçus</span><span class="pg-tab__hint">Reçus PDF officiels</span></span>
+        </button>
+        <button type="button" class="pg-tab" role="tab" id="tab-echeances" aria-controls="echeances" aria-selected="false" tabindex="-1" data-tab="echeances">
+          <span class="pg-tab__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2.5"/><path d="M3 10h18"/><path d="M8 3v4"/><path d="M16 3v4"/></svg></span>
+          <span><span class="pg-tab__name">Échéances et rappels</span><span class="pg-tab__hint">SMS et e-mail</span></span>
+        </button>
+        <button type="button" class="pg-tab" role="tab" id="tab-fiche" aria-controls="fiche" aria-selected="false" tabindex="-1" data-tab="fiche">
+          <span class="pg-tab__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 5 4h14l2 5.5"/><path d="M3 9.5a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/><path d="M5 12.5V20h14v-7.5"/><path d="M10 20v-4h4v4"/></svg></span>
+          <span><span class="pg-tab__name">Fiche entreprise</span><span class="pg-tab__hint">Visible dans l’annuaire</span></span>
+        </button>
+      </div>
+
+      <!-- Taxes -->
+      <div class="pg-panel" role="tabpanel" id="taxes" aria-labelledby="tab-taxes" tabindex="0">
+        <div>
+          <h2 class="pg-panel__title">Payer mes taxes</h2>
+          <p class="pg-panel__text">Les montants dus par votre entreprise s’affichent dans votre espace. Vous vérifiez, vous payez, c’est enregistré.</p>
+          <ul class="pg-tags" aria-label="Taxes concernées"><li>Patente</li><li>Taxe municipale</li><li>TVA</li><li>Impôt sur les sociétés</li></ul>
+          <ul class="pg-ticks">
+            <li>Le montant et la date limite de chaque taxe, calculés pour votre entreprise.</li>
+            <li>Paiement par Mobile Money ou carte bancaire, en quelques secondes.</li>
+            <li>Le reçu officiel est disponible dès que le paiement est validé.</li>
+          </ul>
+          <a class="btn btn-primary btn-lg" href="connexion.html">Voir mes taxes</a>
+        </div>
+        <div class="pg-screen" aria-hidden="true">
+          <div class="pg-card">
+            <div class="pg-card__row"><span class="pg-card__label">Patente 2026</span><span class="pg-pill">À payer avant le 31 mars</span></div>
+            <div class="pg-card__amount">185 000<small>FCFA</small></div>
+            <span class="pg-fakebtn">Payer la patente</span>
+          </div>
+          <div class="pg-card">
+            <div class="pg-line"><span class="pg-line__sq" style="background:#2E68BE"></span><span><span class="pg-line__name">Taxe municipale</span><br><span class="pg-line__meta">Mairie de Libreville</span></span><span class="pg-pill pg-pill--ok">Payée</span></div>
+            <div class="pg-line"><span class="pg-line__sq" style="background:#FFCD04"></span><span><span class="pg-line__name">TVA · 1er trimestre</span><br><span class="pg-line__meta">Échéance le 15 avril</span></span><span class="pg-pill pg-pill--blue">À venir</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cotisations -->
+      <div class="pg-panel" role="tabpanel" id="cotisations" aria-labelledby="tab-cotisations" tabindex="0" hidden>
+        <div>
+          <h2 class="pg-panel__title">Payer mes cotisations</h2>
+          <p class="pg-panel__text">Déclarez vos salariés et réglez leurs cotisations sociales au même endroit que vos taxes, sans passer d’un guichet à l’autre.</p>
+          <ul class="pg-tags" aria-label="Organismes"><li>CNSS</li><li>CNAMGS</li></ul>
+          <ul class="pg-ticks">
+            <li>La liste de vos salariés, mise à jour depuis votre espace.</li>
+            <li>Le total à verser à chaque caisse, mois après mois.</li>
+            <li>Vos droits sociaux et ceux de vos salariés suivis dans le temps.</li>
+          </ul>
+          <a class="btn btn-primary btn-lg" href="connexion.html">Déclarer mes salariés</a>
+        </div>
+        <div class="pg-screen" aria-hidden="true">
+          <div class="pg-card">
+            <div class="pg-card__row"><span class="pg-card__title">Cotisations de mars</span><span class="pg-pill">4 salariés</span></div>
+            <div class="pg-line"><span class="pg-line__sq" style="background:#2E68BE"></span><span class="pg-line__name">CNSS</span><span class="pg-card__title">96 400 F</span></div>
+            <div class="pg-line"><span class="pg-line__sq" style="background:#1E8A4C"></span><span class="pg-line__name">CNAMGS</span><span class="pg-card__title">41 200 F</span></div>
+            <div class="pg-bar"><span style="width:68%"></span></div>
+            <p class="pg-card__label" style="margin:8px 0 14px">Déclaration complétée à 68 %</p>
+            <span class="pg-fakebtn">Continuer la déclaration</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reçus -->
+      <div class="pg-panel" role="tabpanel" id="recus" aria-labelledby="tab-recus" tabindex="0" hidden>
+        <div>
+          <h2 class="pg-panel__title">Historique et reçus</h2>
+          <p class="pg-panel__text">Chaque paiement laisse une trace. Retrouvez vos reçus quand un contrôle, une banque ou un marché public vous les demande.</p>
+          <ul class="pg-ticks">
+            <li>Tous vos paiements classés par année, par taxe et par organisme.</li>
+            <li>Des reçus PDF officiels, téléchargeables et imprimables.</li>
+            <li>Un récapitulatif annuel à transmettre à votre comptable.</li>
+          </ul>
+          <a class="btn btn-primary btn-lg" href="connexion.html">Retrouver mes reçus</a>
+        </div>
+        <div class="pg-screen" aria-hidden="true">
+          <div class="pg-receipt">
+            <span class="pg-stamp">Payé</span>
+            <span class="pg-card__label">Reçu n° RSE-2026-004718</span>
+            <div class="pg-card__title" style="margin:6px 0 12px">Patente 2026</div>
+            <dl class="pg-kv">
+              <dt>Entreprise</dt><dd>Atelier Nkoum</dd>
+              <dt>Date</dt><dd>12 mars 2026</dd>
+              <dt>Moyen</dt><dd>Mobile Money</dd>
+              <dt>Montant</dt><dd>185 000 FCFA</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <!-- Échéances -->
+      <div class="pg-panel" role="tabpanel" id="echeances" aria-labelledby="tab-echeances" tabindex="0" hidden>
+        <div>
+          <h2 class="pg-panel__title">Échéances et rappels</h2>
+          <p class="pg-panel__text">Plus besoin de retenir les dates limites. Un rappel vous arrive avant chacune, avec le montant et le lien pour payer.</p>
+          <ul class="pg-ticks">
+            <li>Un calendrier de toutes vos échéances de l’année.</li>
+            <li>Un rappel par SMS et par e-mail quelques jours avant la date.</li>
+            <li>Une alerte si un paiement est en retard, pour éviter les pénalités.</li>
+          </ul>
+          <a class="btn btn-primary btn-lg" href="connexion.html">Voir mon calendrier</a>
+        </div>
+        <div class="pg-screen" aria-hidden="true">
+          <div class="pg-card">
+            <div class="pg-card__row"><span class="pg-card__title">Avril 2026</span><span class="pg-pill">2 échéances</span></div>
+            <div class="pg-cal"><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span><span>6</span><span>7</span><span class="is-today">8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span class="is-due">15</span><span>16</span><span>17</span><span>18</span><span>19</span></div>
+          </div>
+          <div class="pg-card pg-sms">
+            <span class="pg-sms__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E2A5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1.1-4.6A8 8 0 1 1 21 12z"/></svg></span>
+            <div><span class="pg-card__title">entreprenant.ga</span><p>Votre TVA du 1er trimestre est due le 15 avril. Payez-la depuis votre espace.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fiche entreprise -->
+      <div class="pg-panel" role="tabpanel" id="fiche" aria-labelledby="tab-fiche" tabindex="0" hidden>
+        <div>
+          <h2 class="pg-panel__title">Fiche entreprise</h2>
+          <p class="pg-panel__text">Votre entreprise apparaît dans l’annuaire public des entreprenants. Les clients et partenaires vous trouvent par activité et par ville.</p>
+          <ul class="pg-ticks">
+            <li>Une fiche créée automatiquement avec votre compte.</li>
+            <li>Vous choisissez les informations visibles : activité, ville, contact.</li>
+            <li>La mention « Inscrit au registre » rassure vos clients.</li>
+          </ul>
+          <a class="btn btn-primary btn-lg" href="annuaire.html">Parcourir l’annuaire</a>
+        </div>
+        <div class="pg-screen" aria-hidden="true">
+          <div class="pg-card">
+            <div class="pg-profile"><span class="pg-avatar">AN</span><div><span class="pg-card__title">Atelier Nkoum</span><br><span class="pg-card__label">Artisanat · Menuiserie</span></div></div>
+            <dl class="pg-kv">
+              <dt>Ville</dt><dd>Libreville</dd>
+              <dt>Secteur</dt><dd>Artisanat</dd>
+              <dt>Statut</dt><dd><span class="pg-pill pg-pill--ok">Inscrit au registre</span></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CE QU’IL VOUS FAUT ================= -->
+<section class="pg-section">
+  <div class="container pg-needs">
+    <div class="pg-head">
+      <span class="eyebrow">Avant de commencer</span>
+      <h2 class="section-title">Ayez ces informations sous la main</h2>
+      <p class="section-lead">L’inscription prend environ deux minutes si vous avez déjà les références de votre entreprise.</p>
+      <p style="margin-top:24px"><a class="btn btn-outline" href="comment-ca-marche.html">Voir le parcours complet <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></a></p>
+    </div>
+    <ul class="pg-need-list">
+      <li class="pg-need"><span class="pg-need__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2E68BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><circle cx="8.5" cy="11" r="2"/><path d="M5.5 16a3 3 0 0 1 6 0"/><path d="M14 10h4"/><path d="M14 14h3"/></svg></span><span><span class="pg-need__title">Une pièce d’identité</span><span class="pg-need__text">Carte nationale d’identité ou passeport du responsable.</span></span></li>
+      <li class="pg-need"><span class="pg-need__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0E2A5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2.5h8.5l4.5 4.5v14.5H6z"/><path d="M14 2.5V7.5h5"/><path d="M9 13h6"/><path d="M9 17h4"/></svg></span><span><span class="pg-need__title">Votre NIF</span><span class="pg-need__text">Numéro d’identification fiscale de l’entreprise.</span></span></li>
+      <li class="pg-need"><span class="pg-need__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2E68BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 5 4h14l2 5.5"/><path d="M5 12.5V20h14v-7.5"/><path d="M10 20v-4h4v4"/></svg></span><span><span class="pg-need__title">Votre RCCM</span><span class="pg-need__text">Numéro d’immatriculation au registre du commerce.</span></span></li>
+      <li class="pg-need"><span class="pg-need__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0E2A5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg></span><span><span class="pg-need__title">Un téléphone</span><span class="pg-need__text">Pour vous connecter, recevoir les rappels et payer par Mobile Money.</span></span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= QUESTIONS ================= -->
+<section class="pg-section pg-section--tint">
+  <div class="container pg-faq">
+    <div class="pg-head">
+      <span class="eyebrow">Questions fréquentes</span>
+      <h2 class="section-title">Ce qu’on nous demande sur les services</h2>
+      <div class="pg-help">
+        <strong>Une autre question ?</strong>
+        <p>Notre équipe répond du lundi au vendredi.</p>
+        <a href="comment-ca-marche.html#questions">Voir toutes les questions</a>
+      </div>
+    </div>
+    <div class="pg-faq__list">
+      <details class="pg-q" open><summary>Le service est-il payant ?</summary><div class="pg-q__a"><p>La création du compte et l’utilisation de l’espace sont gratuites. Vous payez seulement vos taxes et cotisations, au montant fixé par chaque institution.</p></div></details>
+      <details class="pg-q"><summary>Mon reçu a-t-il la même valeur qu’au guichet ?</summary><div class="pg-q__a"><p>Oui. Le reçu est émis pour le compte de l’institution concernée et vous pouvez le présenter lors d’un contrôle.</p></div></details>
+      <details class="pg-q"><summary>Je n’ai pas encore de RCCM, puis-je m’inscrire ?</summary><div class="pg-q__a"><p>Vous pouvez créer votre compte et compléter les informations de l’entreprise plus tard. Certains paiements ne seront disponibles qu’une fois le RCCM renseigné.</p></div></details>
+      <details class="pg-q"><summary>Que se passe-t-il si le paiement échoue ?</summary><div class="pg-q__a"><p>Rien n’est débité tant que le paiement n’est pas confirmé. Le montant reste affiché dans votre espace et vous pouvez réessayer.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="pg-section" aria-label="Commencer">
+  <div class="container">
+    <div class="pg-cta">
+      <div>
+        <h2 class="pg-cta__title">Prêt à régler vos démarches en ligne ?</h2>
+        <p class="pg-cta__text">Créez votre compte gratuitement : vos taxes et cotisations s’affichent dès que votre entreprise est enregistrée.</p>
+      </div>
+      <div class="pg-cta__actions">
+        <a class="btn btn-lg pg-btn-yellow" href="connexion.html#inscription">Créer mon compte</a>
+        <a class="btn btn-lg pg-btn-ghost" href="connexion.html">Se connecter</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= PIED DE PAGE ================= -->
+<footer class="site-footer">
+  <div class="flag-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+  <img class="watermark site-footer__mark" src="assets/img/e-blanc.png" alt="" aria-hidden="true">
+  <div class="container footer-inner">
+    <div class="footer-cols">
+      <div class="footer-brand">
+        <img src="assets/img/logo-blanc.png" alt="entreprenant.ga" width="282" height="36">
+        <p>Le guichet en ligne des entreprenants : taxes, cotisations et reçus, sans déplacement.</p>
+        <div class="pay-pills">
+          <span class="pay-pill"><svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#FFCD04" stroke-width="2.2" stroke-linecap="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg>Mobile Money</span>
+          <span class="pay-pill"><svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#FFCD04" stroke-width="2.2" stroke-linecap="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>Carte bancaire</span>
+          <span class="pay-pill"><svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#FFCD04" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/></svg>Paiement sécurisé</span>
+        </div>
+      </div>
+      <nav class="footer-col" aria-label="Services">
+        <span class="footer-col__title">Services</span>
+        <a href="services.html#taxes">Payer mes taxes</a>
+        <a href="services.html#cotisations">Payer mes cotisations</a>
+        <a href="services.html#recus">Historique et reçus</a>
+      </nav>
+      <nav class="footer-col" aria-label="Plateforme">
+        <span class="footer-col__title">Plateforme</span>
+        <a href="comment-ca-marche.html">Comment ça marche</a>
+        <a href="partenaires.html">Partenaires</a>
+        <a href="annuaire.html">Annuaire</a>
+        <a href="connexion.html">Espace entreprenant</a>
+        <a href="comment-ca-marche.html#questions">Aide</a>
+      </nav>
+      <div class="footer-col footer-col--contact" id="contact">
+        <span class="footer-col__title">Contact</span>
+        <span class="contact-item"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFCD04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>[Téléphone]</span>
+        <span class="contact-item"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFCD04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>[E-mail]</span>
+        <span class="contact-item"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFCD04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>[Adresse], Libreville</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> entreprenant.ga</span>
+      <span class="footer-bottom__links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Confidentialité</a>
+        <a class="to-top" href="#contenu">Haut de page<svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m6 11 6-6 6 6"/></svg></a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

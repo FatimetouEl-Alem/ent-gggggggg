@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Annuaire des entreprenants — entreprenant.ga</title>
+<meta name="description" content="Trouvez une entreprise inscrite au Registre Social des Entreprenants par nom, activité, secteur ou ville.">
+<meta name="theme-color" content="#2E68BE">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/pjs-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/pages.css">
+<script src="js/pages.js" defer></script>
+</head>
+<body class="pg" data-page="annuaire">
+<a class="pg-skip" href="#contenu">Aller au contenu</a>
+
+<!-- ================= EN-TÊTE ================= -->
+<header class="site-header" data-header>
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="entreprenant.ga, accueil">
+      <img src="assets/img/logo-couleur.png" alt="entreprenant.ga" width="266" height="34">
+    </a>
+
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a class="nav-link" href="index.html">Accueil</a>
+      <a class="nav-link" href="services.html">Services</a>
+      <a class="nav-link" href="comment-ca-marche.html">Comment ça marche</a>
+      <a class="nav-link" href="partenaires.html">Partenaires</a>
+      <a class="nav-link is-active" href="annuaire.html" aria-current="page">Annuaire</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-primary btn-sm header-cta" href="connexion.html">
+        <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+        Se connecter
+      </a>
+      <button type="button" class="burger" data-burger aria-controls="mobile-menu" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu hidden>
+    <nav class="mobile-menu__nav" aria-label="Menu mobile">
+      <a class="mobile-menu__link" href="index.html">Accueil</a>
+      <a class="mobile-menu__link" href="services.html">Services</a>
+      <a class="mobile-menu__link" href="comment-ca-marche.html">Comment ça marche</a>
+      <a class="mobile-menu__link" href="partenaires.html">Partenaires</a>
+      <a class="mobile-menu__link" href="annuaire.html" aria-current="page">Annuaire</a>
+    </nav>
+    <a class="btn btn-primary btn-lg mobile-menu__cta" href="connexion.html">Se connecter</a>
+    <a class="mobile-menu__sub" href="connexion.html#inscription">Créer un compte</a>
+  </div>
+</header>
+
+<main id="contenu" tabindex="-1">
+<!-- ================= HERO + RECHERCHE ================= -->
+<section class="pg-hero">
+  <svg class="pg-hero__ribbon" viewBox="0 0 1440 400" preserveAspectRatio="none" aria-hidden="true"><path d="M-30 340 C 280 270, 520 380, 820 290 S 1240 120, 1470 160" fill="none" stroke="#FFCD04" stroke-opacity=".32" stroke-width="10" stroke-linecap="round"/><path d="M-30 370 C 290 300, 530 410, 830 320 S 1250 150, 1470 190" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="2"/></svg>
+    <img class="watermark pg-hero__mark" src="assets/img/e-blanc.png" alt="" aria-hidden="true">
+  <div class="container pg-hero__inner pg-hero__inner--solo">
+    <div>
+      <ol class="pg-crumbs" aria-label="Fil d’Ariane"><li><a href="index.html">Accueil</a></li><li aria-current="page">Annuaire</li></ol>
+      <h1 class="pg-hero__title">Trouvez un entreprenant près de chez vous</h1>
+      <p class="pg-hero__lead">Les entreprises inscrites au Registre Social des Entreprenants, à rechercher par nom, activité, secteur ou ville.</p>
+
+      <form class="pg-search" role="search" aria-label="Rechercher dans l’annuaire" action="annuaire.html" method="get" data-dir-form>
+        <label class="pg-search__field">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E68BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <span class="sr-only">Entreprise ou activité</span>
+          <input type="search" name="q" placeholder="Activité ou nom d’entreprise" autocomplete="off" data-dir-q>
+        </label>
+        <label class="pg-search__field">
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0E2A5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <span class="sr-only">Ville</span>
+          <select name="ville" data-dir-city>
+            <option value="">Toutes les villes</option>
+            <option>Libreville</option><option>Port-Gentil</option><option>Franceville</option><option>Oyem</option><option>Owendo</option>
+          </select>
+        </label>
+        <button type="submit" class="btn btn-lg pg-btn-yellow pg-search__btn">Rechercher</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RÉSULTATS ================= -->
+<section class="pg-section">
+  <div class="container pg-dir">
+    <aside class="pg-filters" aria-label="Filtres">
+      <div>
+        <h2 class="pg-filters__title">Secteurs</h2>
+        <div class="pg-sectors" role="group" aria-label="Filtrer par secteur" data-dir-sectors>
+          <button type="button" class="pg-sector" aria-pressed="true" data-sector="">
+            <span class="pg-sector__ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E68BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg></span>
+            <span>Tous</span><span class="pg-sector__count" data-count=""></span>
+          </button>
+          <button type="button" class="pg-sector" aria-pressed="false" data-sector="commerce">
+            <span class="pg-sector__ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E68BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 5 4h14l2 5.5"/><path d="M3 9.5a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/><path d="M5 12.5V20h14v-7.5"/><path d="M10 20v-4h4v4"/></svg></span>
+            <span>Commerce</span><span class="pg-sector__count" data-count="commerce"></span>
+          </button>
+          <button type="button" class="pg-sector" aria-pressed="false" data-sector="artisanat">
+            <span class="pg-sector__ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E68BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4 20 9 9 20H4v-5z"/><path d="m12.5 6.5 5 5"/></svg></span>
+            <span>Artisanat</span><span class="pg-sector__count" data-count="artisanat"></span>
+          </button>
+          <button type="button" class="pg-sector" aria-pressed="false" data-sector="agriculture">
+            <span class="pg-sector__ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E68BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-9"/><path d="M12 12C12 7 8.5 4.5 4 4.5 4 9 7 12 12 12z"/><path d="M12 14c0-4 3-6.5 7.5-6.5C19.5 11.5 17 14 12 14z"/></svg></span>
+            <span>Agriculture</span><span class="pg-sector__count" data-count="agriculture"></span>
+          </button>
+          <button type="button" class="pg-sector" aria-pressed="false" data-sector="numerique">
+            <span class="pg-sector__ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E68BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8"/><path d="M12 16v4"/></svg></span>
+            <span>Numérique</span><span class="pg-sector__count" data-count="numerique"></span>
+          </button>
+          <button type="button" class="pg-sector" aria-pressed="false" data-sector="services">
+            <span class="pg-sector__ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2E68BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>
+            <span>Services</span><span class="pg-sector__count" data-count="services"></span>
+          </button>
+        </div>
+      </div>
+      <div class="pg-add">
+        <strong>Votre entreprise n’y est pas ?</strong>
+        <p>Votre fiche est créée en même temps que votre compte.</p>
+        <a href="connexion.html#inscription">Ajouter mon entreprise</a>
+      </div>
+    </aside>
+
+    <div>
+      <div class="pg-results__bar">
+        <p class="pg-results__count" aria-live="polite" data-dir-count><strong>—</strong> entreprises</p>
+        <div class="pg-active" data-dir-active></div>
+        <label class="pg-sort">Trier par
+          <select data-dir-sort>
+            <option value="name">Nom (A à Z)</option>
+            <option value="recent">Inscription récente</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="pg-grid" data-dir-grid></div>
+
+      <div class="pg-empty" data-dir-empty hidden>
+        <span class="pg-empty__icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2E68BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/><path d="M8.5 11h5"/></svg></span>
+        <h3>Aucune entreprise ne correspond</h3>
+        <p>Essayez un autre mot, un autre secteur ou toutes les villes.</p>
+        <button type="button" class="btn btn-outline" data-dir-reset>Effacer les filtres</button>
+      </div>
+
+      <div class="pg-more" data-dir-more-wrap hidden>
+        <button type="button" class="btn btn-outline" data-dir-more>Afficher plus d’entreprises</button>
+      </div>
+
+      <p class="pg-note" data-demo-note>Annuaire de démonstration : les entreprises affichées sont des exemples.</p>
+      <noscript><p class="pg-note">Activez JavaScript pour parcourir l’annuaire.</p></noscript>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FICHE ENTREPRISE ================= -->
+<dialog class="pg-dialog" data-dir-dialog aria-labelledby="biz-title">
+  <div class="pg-dialog__head">
+    <span class="pg-avatar" data-biz-initials></span>
+    <div>
+      <h2 class="pg-dialog__title" id="biz-title" data-biz-name></h2>
+      <p class="pg-dialog__sub" data-biz-sub></p>
+    </div>
+    <button type="button" class="pg-dialog__close" data-dir-close aria-label="Fermer la fiche"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <div class="pg-dialog__body">
+    <p data-biz-desc></p>
+    <dl class="pg-kv">
+      <dt>Secteur</dt><dd data-biz-sector></dd>
+      <dt>Ville</dt><dd data-biz-city></dd>
+      <dt>Inscrite depuis</dt><dd data-biz-since></dd>
+      <dt>Statut</dt><dd><span class="pg-pill pg-pill--ok">Inscrite au registre</span></dd>
+    </dl>
+    <a class="btn btn-primary" href="#" data-biz-call>Appeler l’entreprise</a>
+  </div>
+</dialog>
+
+</main>
+
+<!-- ================= PIED DE PAGE ================= -->
+<footer class="site-footer">
+  <div class="flag-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+  <img class="watermark site-footer__mark" src="assets/img/e-blanc.png" alt="" aria-hidden="true">
+  <div class="container footer-inner">
+    <div class="footer-cols">
+      <div class="footer-brand">
+        <img src="assets/img/logo-blanc.png" alt="entreprenant.ga" width="282" height="36">
+        <p>Le guichet en ligne des entreprenants : taxes, cotisations et reçus, sans déplacement.</p>
+        <div class="pay-pills">
+          <span class="pay-pill"><svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#FFCD04" stroke-width="2.2" stroke-linecap="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg>Mobile Money</span>
+          <span class="pay-pill"><svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#FFCD04" stroke-width="2.2" stroke-linecap="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>Carte bancaire</span>
+          <span class="pay-pill"><svg aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#FFCD04" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/></svg>Paiement sécurisé</span>
+        </div>
+      </div>
+      <nav class="footer-col" aria-label="Services">
+        <span class="footer-col__title">Services</span>
+        <a href="services.html#taxes">Payer mes taxes</a>
+        <a href="services.html#cotisations">Payer mes cotisations</a>
+        <a href="services.html#recus">Historique et reçus</a>
+      </nav>
+      <nav class="footer-col" aria-label="Plateforme">
+        <span class="footer-col__title">Plateforme</span>
+        <a href="comment-ca-marche.html">Comment ça marche</a>
+        <a href="partenaires.html">Partenaires</a>
+        <a href="annuaire.html">Annuaire</a>
+        <a href="connexion.html">Espace entreprenant</a>
+        <a href="comment-ca-marche.html#questions">Aide</a>
+      </nav>
+      <div class="footer-col footer-col--contact" id="contact">
+        <span class="footer-col__title">Contact</span>
+        <span class="contact-item"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFCD04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>[Téléphone]</span>
+        <span class="contact-item"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFCD04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>[E-mail]</span>
+        <span class="contact-item"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFCD04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>[Adresse], Libreville</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> entreprenant.ga</span>
+      <span class="footer-bottom__links">
+        <a href="#">Mentions légales</a>
+        <a href="#">Confidentialité</a>
+        <a class="to-top" href="#contenu">Haut de page<svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m6 11 6-6 6 6"/></svg></a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
